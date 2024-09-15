@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assist/bg.jpg.jpg);
+    height: 90vh;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1360px, 100vw);
+}
+
+.box {
+    background-color: black;
+    opacity: 0.7;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 75vw;
+    padding: 30px 0px;
+
+}
+
+.eng {
+    padding: 7px 30px 7px 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    opacity: 0.6;
+    border-radius: 4px;
+}
+
+.sign {
+    padding: 7px 20px;
+    border-radius: 4px;
+}
+
+.btn {
+    display: flex;
+    gap: 23px;
+    height: 30px;
+}
+
+span {
+    width: 150px;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 23px;
+    padding: 0px 23px;
+
+}
+
+.hero>:nth-child(1) {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.hero>:nth-child(2) {
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.hero>:nth-child(3) {
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.hero input {
+    background-color: black;
+    opacity: 0.7;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 15px 100px 15px 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.b-red {
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.h-button button {
+    padding: 9px 40px 9px 40px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.h-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.separation {
+    border: 4px solid rgb(56, 55, 55);
+}
+
+section {
+    display: flex;
+    max-width: 75vw;
+    height: 30vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50vw;
+    margin: auto;
+}
+
+.f-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.f-img video {
+    width: 27vw;
+    position: absolute;
+}
+
+.f-img img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.first :nth-child(1) {
+    font-size: 50px;
+    font-weight: 1000;
+    padding-bottom: 15px;
+}
+
+.first :nth-child(2) {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.questions:hover {
+    background-color: gray;
+}
+
+.faq>:nth-child(1) {
+    font-size: 50px;
+}
+
+.questions {
+    width: 75vw;
+    height: 10vh;
+    background-color: #414141;
+
+}
+
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.questions p {
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.questions img {
+    width: 10px;
+}
+
+.questions svg {
+    padding-right: 25px;
+}
+
+.membership {
+    font-size: 25px;
+}
+
+.b-hero {
+    margin-bottom: 60px;
+}
+
+footer {
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    height: 60vh;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+
+}
+
+.footer-items {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 23px;
+    font-size: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.question {
+    padding: 30px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+        background-size: max(1482px, 100vw);
+    }
+
+    .hero>:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .hero>:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .hero>:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .h-button {
+        flex-direction: column;
+    }
+
+    .hero-input {
+        padding: 15px 70px 15px 10px;
+    }
+
+    nav span {
+        width: 100px;
+    }
+
+    .eng {
+        padding: 5px 10px 5px 10px;
+        font-size: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .f-img img {
+        width: 40vw;
+    }
+
+    .f-img video {
+        width: 30vw;
+    }
+
+    .first :nth-child(2) {
+        font-size: 17px;
+    }
+
+    .first :nth-child(1) {
+        font-size: 25px;
+    }
+
+    .faq>:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .questions p {
+        font-size: 20px;
+    }
+
+    .membership {
+        font-size: 10px;
+    }
+    .footer-items {
+        font-size: 15px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    section {
+        height: 70vh;
+    }
+}
